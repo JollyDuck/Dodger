@@ -41,7 +41,6 @@ namespace Dodger
         protected override void Initialize()
         {
 
-            mCurrentScreen = mTitleScreen;
             // TODO: Add your initialization logic here
 
             base.Initialize();
@@ -57,6 +56,7 @@ namespace Dodger
             spriteBatch = new SpriteBatch(GraphicsDevice);
             mTitleScreen = new TitleScreen(this.Content, new EventHandler(TitleScreenEvent));
             mMainGameScreen = new MainGameScreen(this.Content);
+            mCurrentScreen = mTitleScreen;
             // TODO: use this.Content to load your game content here
         }
 

@@ -50,11 +50,6 @@ namespace Dodger
             waveAttack(gameTime);
             //Check to see if the Player one controller has pressed the "B" button, if so, then
             //call the screen event associated with this screen
-            if (GamePad.GetState(PlayerIndex.One).Buttons.B == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.B) == true)
-            {
-                ScreenEvent.Invoke(this, new EventArgs());
-            }
-
             base.Update(gameTime);
         }
 
